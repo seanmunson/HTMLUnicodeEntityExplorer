@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta property="og:Title" content="Unicode Explorer w/ bookmarks"/>
+        <meta property="og:image" content="img/unicodeexplorer.png"/>
+        <link rel="stylesheet" href="css/unicodes.css" >
+    </head>
+    <body>
+       <table>
+           <tr><td colspan=2><div id='pagination'>
+                <input type="button" value="&#8592;" onclick="pgdn();">                
+                <input type="button" value=" " onclick="saveBookmarks()" class="savebutton">
+                <input type="button" value=" " onclick="clearBookmarks()" class="clearbutton">
+                <input type="button" value="&#8594;" onclick="pgup();">                
+            </div></td></tr>
+            <tr>
+                <td><div id='bookmarkPanel'></div></td>
+                <td><div id='content'></div></td>
+            </tr>
+        </table>        
+        <div id='frameForDisplay'></div>  
+        <script lang='javascript' src='script/unicodes.js'> </script>
+        
+    </body>
+</html>

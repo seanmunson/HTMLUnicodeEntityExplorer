@@ -1,0 +1,110 @@
+body, input
+{ 
+    font-size: 32pt;  
+    color:black; 
+    background-color: white;
+}
+#content
+{
+    min-height:50%;
+}
+#content
+{               
+    float:right;
+    text-align: center;
+}
+#pagination
+{
+    float:left;
+    display:flex;
+}
+#pagination input
+{
+    margin:1px;
+    flex:1;
+    border-width: 2px;
+    border-radius: 4px;
+    font-size: 3em;
+    border-style: outset;
+    border-color: #ffff;
+}
+.asciitable{
+    width:600px;
+    font-size:.7em;
+    border:none;
+}
+.asciitable td, th{
+    width:59px;
+    height:59px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.asciitable td span
+{
+    font-size:1.5em;
+    font-family:'Courier New', Courier, monospace;
+}
+.asciitable td{
+    border:1pt solid black;
+    text-align:center;
+}
+.bookmark {
+    font-size: 10px;
+    padding: 3px;
+    margin: 3px;
+    border-style: dotted;
+    border-width: thin;
+    border-color: #808080;
+    float: left;
+    position: relative;
+    white-space: nowrap;
+}
+
+.bookmark input {
+    font-size: 18px;
+    padding:5px;
+    margin:2px;
+}
+
+.closebutton 
+{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    margin-right: 3px;
+    outline-width: thin;
+    text-align: center;
+    display:inline-block;
+    vertical-align: text-bottom;
+    font-size: 16px;
+}
+.savebutton
+{ 
+    background-image:url('img\\disk.png') ;
+    background-size: 32px 32px;
+    background-repeat:no-repeat;
+    background-position: center;
+    max-width:50px;
+}
+.clearbutton
+{    
+    background-image:url('img\\trashcan.png') ;
+    background-size: 32px 32px;
+    background-repeat:no-repeat;
+    background-position: center;
+    max-width:50px;
+}
+#pagination
+{ 
+    width:100%;
+}
+#pagination input{
+    width:20%;
+}
+.codeshow
+{
+    font-size:3em;
+}
+.codelabel
+{
+    font-size:1.3em;
+}
