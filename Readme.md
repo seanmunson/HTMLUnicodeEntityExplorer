@@ -13,3 +13,4 @@ This also allows a user too bookmark their values.
 - Add dark mode
 - Allow sharing of bookmarks
 - Allow active font to be changes.
+- Allow copying of codes into an input text field
