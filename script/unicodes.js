@@ -3,7 +3,7 @@
             currentpage = 0;
             CreateCharGrid(currentpage);
             
-            var bookmarks = loadBookmarks(); 
+            let bookmarks = loadBookmarks(); 
 
             rezBookmarks();
 
@@ -15,7 +15,7 @@
             }  
             function rezBookmarks(){
                 if (Object.keys(bookmarks).length <=1) return ;
-                var rezzedhtml = "" + Object.entries(bookmarks).reduce( (tot, cur, acc) =>{
+                let rezzedhtml = "" + Object.entries(bookmarks).reduce( (tot, cur, acc) =>{
                     if (cur[0]=="last")
                     {
                          return tot;
@@ -62,7 +62,7 @@
             }
             function loadBookmarks()
             {
-                var c = decodeURIComponent(document.cookie);  
+                let c = decodeURIComponent(document.cookie);  
 
                 if (c.length==0)
                 {
@@ -99,7 +99,7 @@
             }
             function makeBookmark(id)
             {
-                var name = prompt("Enter a name for bookmark at @"+id, `&#${id};`);
+                let name = prompt("Enter a name for bookmark at @"+id, `&#${id};`);
 
                 if (name!=null)
                 {
