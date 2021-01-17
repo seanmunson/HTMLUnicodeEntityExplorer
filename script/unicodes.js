@@ -137,7 +137,7 @@
                     let hr = TH.insertRow();
                     const X = hr.insertCell(0);
                     X.innerText=startpos;
-                    for (var i=1;i<11;i++) {
+                    for (let i=1;i<11;i++) {
                         let c = document.createElement("td");
                         let t = document.createTextNode(i);                         
                         c.appendChild(t);
@@ -148,15 +148,15 @@
                 let B = T.createTBody();                 
                 {
                 content.appendChild(T);
-                    for (var i=0; i<11; i++)
+                    for (let i=0; i<11; i++)
                     {
                         let tr = B.insertRow();
                         const rh = tr.insertCell(0);
                         rh.innerText=i;
-                        for(var j=0;j<10;j++){
+                        for(let j=0;j<10;j++){
                             let charcode = ((i*10) + j) + startpos;
                             td = tr.insertCell(-1);                                         
-                            td.innerHTML = '<div class="codeshow" onclick="makeBookmark(' + charcode + ');">&#' +charcode+';</div> <span class="codelabel">&amp;#' + charcode + ';</span>'; 
+                            td.innerHTML = `<div class="codeshow" onclick="makeBookmark(${charcode});">&#${charcode};</div> <span class="codelabel">&amp;#${charcode};</span>`; 
                         }
                     }
                 
