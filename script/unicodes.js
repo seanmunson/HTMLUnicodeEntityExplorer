@@ -51,7 +51,7 @@
                 let domain =  document.domain ==='localhost'? "": `Domain=.${document.domain}`;
                 let path = "Path=/";
                 let cookieToBeWritten =  Object.keys(bookmarks).map( (k )=>{
-                return `${k}=${bookmarks[k].val};${domain};${path}` ;
+                    return `${k}=${bookmarks[k].val};${domain};${path}` ;
                 })             
                 cookieToBeWritten.forEach( (s, i, arr)=>{
                     console.log (s);
